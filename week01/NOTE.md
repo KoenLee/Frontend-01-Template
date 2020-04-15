@@ -8,4 +8,9 @@
 
 3.对工具链、持续集成等概念有了初步的认识
 
-脑图 （xmind）
+前端知识体系图
+<p align='center'>
+<img src='xmind.png' title='images' style='max-width:600px'></img>
+</p>
+
+
