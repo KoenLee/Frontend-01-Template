@@ -7,3 +7,13 @@
 2.追溯法的学习方式，参考权威的信息来源
 
 3.对工具链、持续集成等概念有了初步的认识
+<<<<<<< HEAD
+=======
+
+前端知识体系图
+<p align='center'>
+<img src='xmind.png' title='images' style='max-width:600px'></img>
+</p>
+
+
+>>>>>>> 1f0fc9c74e58c6c70ab857e9c195c96ed7dc754c
