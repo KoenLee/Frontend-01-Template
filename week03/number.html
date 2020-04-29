@@ -30,22 +30,32 @@
       return number
     }
 
-    function convertNumbertoString(number,x){
-      if(arguments.length < 2)
-        x=10
+    function convertNumberToString(number, x) {
+      let len = (number + '').split('.')[1].length
       let integer = Math.floor(number)
-      let fraction = number - integer
+      let fraction = (number - integer).toFixed(len)
       let string = ''
-      while(integer > 0){
-        string = String(integer % x) + string
+
+      while (integer > 0) {
+        string = integer % x + string
         integer = Math.floor(integer / x)
       }
-      
-      console.log(string+fraction)
-      
+      if (fraction > 0) {
+        string += '.'
+      }
+      let i = 0
+      let int = 0
+      while (i < len) {
+        fraction = fraction * x
+        int = i === len - 1 ? Math.round(fraction) : Math.floor(fraction)
+        string += int
+        fraction -= int
+        i++
+      }
       return string
     }
     convertStringtoNumber('10.0023')
+    convertNumberToString(101.0023)
   </script>
 </body>
 </html>
